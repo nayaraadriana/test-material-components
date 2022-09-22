@@ -7,33 +7,30 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import AddIcon from '@mui/icons-material/Add';
 import Grid from '@mui/material/Grid';
 import DenseTable from './table';
-import HorizontalRuleIcon from '@mui/icons-material/HorizontalRule';
+import  {Box } from '@mui/system';
+import Container from '@mui/material/Container';
 
 
 export default function SimpleAccordion() {
   return (
     <>
+        <Box >
+            <Container>
+            
 
-    <Grid container direction={'column'}>
-        <Grid item>
+            <Grid container direction={'column'}>
+            <Typography paddingBottom={2} variant="h5"
+            sx={{
+                color: 'white',
+            }}>
+                #DescidaProduto_Norte
+                
+            </Typography>
+            <Grid item>
             <Accordion >
-                <AccordionSummary expandIcon={<ExpandMoreIcon/>}><Typography>Produção Oeste Mfe</Typography></AccordionSummary>
+                <AccordionSummary expandIcon={<ExpandMoreIcon/>}><Typography>#DescidaProduto_Fino_FVKN</Typography></AccordionSummary>
                 <AccordionDetails>
-                    <Grid container direction={'column'}>
-                        <Grid item>
-                            <Accordion>
-                            <AccordionSummary expandIcon={<ExpandMoreIcon/>}><Typography>Produção Oeste Mfe</Typography></AccordionSummary>
-                            <AccordionDetails><DenseTable></DenseTable></AccordionDetails>
-                            </Accordion>
-                        </Grid>
-                        <HorizontalRuleIcon></HorizontalRuleIcon>
-                        <Grid item>
-                            <Accordion>
-                            <AccordionSummary expandIcon={<ExpandMoreIcon/>}><Typography>Produção Oeste Mfe</Typography></AccordionSummary>
-                            <AccordionDetails><DenseTable></DenseTable></AccordionDetails>
-                            </Accordion>
-                        </Grid>
-                    </Grid>
+                    <DenseTable></DenseTable>
 
                 </AccordionDetails>
             </Accordion>
@@ -41,44 +38,46 @@ export default function SimpleAccordion() {
         <AddIcon></AddIcon>
         <Grid item>
             <Accordion>
-                <AccordionSummary expandIcon={<ExpandMoreIcon/>}><Typography>Produção Oeste Mfe</Typography></AccordionSummary>
+                <AccordionSummary expandIcon={<ExpandMoreIcon/>}><Typography>#DescidaProduto_Fino_F7KN</Typography></AccordionSummary>
                 <AccordionDetails><DenseTable></DenseTable></AccordionDetails>
             </Accordion>
         </Grid>
         <AddIcon></AddIcon>
         <Grid item>
             <Accordion>
-                <AccordionSummary expandIcon={<ExpandMoreIcon/>}><Typography>Produção Oeste Mfe</Typography></AccordionSummary>
+                <AccordionSummary expandIcon={<ExpandMoreIcon/>}><Typography>#DescidaProduto_Fino_F1KN</Typography></AccordionSummary>
                 <AccordionDetails><DenseTable></DenseTable></AccordionDetails>
             </Accordion>
         </Grid>
         <AddIcon></AddIcon>
         <Grid item>
             <Accordion>
-                <AccordionSummary expandIcon={<ExpandMoreIcon/>}><Typography>Produção Oeste Mfe</Typography></AccordionSummary>
+                <AccordionSummary expandIcon={<ExpandMoreIcon/>}><Typography>#DescidaProduto_Fino_F2KN</Typography></AccordionSummary>
                 <AccordionDetails><DenseTable></DenseTable></AccordionDetails>
             </Accordion>
         </Grid>
         <AddIcon></AddIcon>
         <Grid item>
             <Accordion>
-                <AccordionSummary expandIcon={<ExpandMoreIcon/>}><Typography>Produção Oeste Mfe</Typography></AccordionSummary>
+                <AccordionSummary expandIcon={<ExpandMoreIcon/>}><Typography>#DescidaProduto_Fino_SFCK</Typography></AccordionSummary>
                 <AccordionDetails><DenseTable></DenseTable></AccordionDetails>
             </Accordion>
         </Grid>
         <AddIcon></AddIcon>
         <Grid item>
             <Accordion>
-                <AccordionSummary expandIcon={<ExpandMoreIcon/>}><Typography>Produção Oeste Mfe</Typography></AccordionSummary>
+                <AccordionSummary expandIcon={<ExpandMoreIcon/>}><Typography>#DescidaProduto_Superfino_PGCJ</Typography></AccordionSummary>
                 <AccordionDetails><DenseTable></DenseTable></AccordionDetails>
             </Accordion>
         </Grid>
 
 
     </Grid>
-
+        
+    
+    </Container>
             
-       
+        </Box>
     </>
   );
 }
