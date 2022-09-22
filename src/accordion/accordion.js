@@ -9,6 +9,7 @@ import Grid from '@mui/material/Grid';
 import DenseTable from './table';
 import  {Box } from '@mui/system';
 import Container from '@mui/material/Container';
+import RemoveIcon from '@mui/icons-material/Remove';
 
 
 export default function SimpleAccordion() {
@@ -26,11 +27,24 @@ export default function SimpleAccordion() {
                 #DescidaProduto_Norte
                 
             </Typography>
+
             <Grid item>
             <Accordion >
                 <AccordionSummary expandIcon={<ExpandMoreIcon/>}><Typography>#DescidaProduto_Fino_FVKN</Typography></AccordionSummary>
                 <AccordionDetails>
-                    <DenseTable></DenseTable>
+                   <Accordion >
+                        <AccordionSummary expandIcon={<ExpandMoreIcon/>}><Typography>#Mercado_Interno_Vendas_Somatorio</Typography></AccordionSummary>
+                        <AccordionDetails>
+                            <DenseTable></DenseTable>
+                        </AccordionDetails>
+                    </Accordion>
+                    <RemoveIcon></RemoveIcon>
+                    <Accordion >
+                        <AccordionSummary expandIcon={<ExpandMoreIcon/>}><Typography>#Descarga_Norte_MI_Mn</Typography></AccordionSummary>
+                        <AccordionDetails>
+                            <DenseTable></DenseTable>
+                        </AccordionDetails>
+                    </Accordion>
 
                 </AccordionDetails>
             </Accordion>
